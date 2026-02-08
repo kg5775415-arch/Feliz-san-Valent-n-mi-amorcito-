@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffb6c1, #ffe4e1);
+  color: #5a0033;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.hero {
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.mensaje {
+  padding: 30px;
+  font-size: 18px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.galeria img {
+  width: 80%;
+  max-width: 260px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255,105,180,0.6);
+  animation: zoom 1.5s ease;
+}
+
+.final {
+  padding: 40px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #8b004b;
+}
+
+.brillo {
+  text-shadow: 0 0 10px #ff69b4, 0 0 25px #ff1493;
+  animation: latir 1.5s infinite;
+}
+
+.music {
+  width: 0;
+  height: 0;
+}
+
+.toque {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  color: #ff1493;
+  animation: fade 2s ease;
+  pointer-events: none;
+}
+
+@keyframes zoom {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes latir {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fade {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
